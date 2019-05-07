@@ -1,20 +1,28 @@
 {
-  "name": "shipping-servicesitory",
+  "name": "shipping-service-js-99",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Lab2 app",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest tests --env=node",
+    "start": "node src/app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ysabir/shipping-servicesitory.git"
+  "engines": {
+    "node": "8.11.3",
+    "npm": "5.6.x"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Ramunas Pikcius",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ysabir/shipping-servicesitory/issues"
+  "jest": {
+    "testEnvironment": "node"
   },
-  "homepage": "https://github.com/ysabir/shipping-servicesitory#readme"
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0",
+    "nock": "^10.0.6",
+    "sinon": "^7.3.2"
+  }
 }
